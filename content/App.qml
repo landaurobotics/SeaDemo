@@ -32,8 +32,8 @@ import QtQuick.Window 6.2
 import SeaProject
 
 Window {
-    width: mainScreen.width
-    height: mainScreen.height
+//    width: mainScreen.width
+//    height: mainScreen.height
 
     visible: true
     title: "SeaProject"

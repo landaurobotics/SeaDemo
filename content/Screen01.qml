@@ -14,8 +14,8 @@ import SeaProject
 import io.qt.Backend
 
 Rectangle {
-    width: Constants.width
-    height: Constants.height
+    width: parent.width
+    height: parent.height
 
     color: Constants.backgroundColor
 
@@ -111,7 +111,7 @@ Rectangle {
         y: 876
         width: 188
         height: 188
-        source: "qrc:/content/landau-logo.png"
+        source: "qrc:/content/rocos-logo.png"
         fillMode: Image.PreserveAspectFit
     }
 

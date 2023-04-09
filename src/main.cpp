@@ -34,7 +34,7 @@
 #include "import_qml_plugins.h"
 
 #include "Backend.h"
-#include "EcatConfig.h"
+//#include "EcatConfig.h"
 
 
 void *robotcontrol(void *arg);
@@ -66,30 +66,6 @@ int main(int argc, char *argv[])
     if (engine.rootObjects().isEmpty()) {
         return -1;
     }
-
-
-    ///////////////EtherCAT/////////////////////////
-    /* Thread-related operation */
-        pthread_mutex_init(&mutex, nullptr);
-
-        pthread_t robot;            // new pthread object
-        pthread_attr_t attr_robot;  // new pthread object attribute
-
-        pthread_t Period;
-        pthread_attr_t attr_Period;
-
-        pthread_t Calibration;
-        pthread_attr_t attr_Calibration;
-
-        if (pthread_attr_init(&attr_robot) != 0)
-            perror("[ROBOT-THREAD INIT FAILURE!]");
-
-        if (pthread_create(&robot, &attr_robot, robotcontrol, (void *) nullptr) != 0) {
-            perror("[ROBOT-THREAD CREATE FAILURE!]");
-            return EXIT_FAILURE;
-        }
-
-    /////////////////////////////////////////////////
 
     return app.exec();
 }

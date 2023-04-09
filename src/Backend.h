@@ -5,7 +5,6 @@
 #include <QQuickItem>
 
 #include <QTimer>
-#include "EcatConfig.h"
 
 class Backend : public QObject
 {
@@ -70,7 +69,11 @@ signals:
 private:
     QTimer* timer;
 
-
+    double ctrl_mode;
+    bool enabled;
+    double g_status;
+    double imp_stiff;
+    double imp_damp;
 
 };
 
