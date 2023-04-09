@@ -113,6 +113,8 @@ Rectangle {
         height: 188
         source: "qrc:/content/rocos-logo.png"
         fillMode: Image.PreserveAspectFit
+        smooth: true
+
     }
 
     Text {

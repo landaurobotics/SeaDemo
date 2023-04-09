@@ -7,6 +7,11 @@ set(CMAKE_AUTOMOC ON)
 
 INCLUDE_DIRECTORIES(src)
 
+
+if(UNIX AND NOT APPLE)
+    set(CMAKE_PREFIX_PATH "/home/think/Qt/6.2.4/gcc_64/lib/cmake")
+endif()
+
 find_package(Qt6 COMPONENTS Gui Qml Quick)
 qt_add_executable(SeaProjectApp src/main.cpp src/Backend.cpp src/Backend.h)
 #qt_add_executable(SeaProjectApp src/main.cpp)
