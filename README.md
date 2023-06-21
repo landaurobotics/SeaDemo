@@ -12,7 +12,7 @@ S.E.A Demo是一个用于展示由Landau Robotics（朗道）开发的串联弹�
 
 # 效果演示
 
-<iframe src="//player.bilibili.com/player.html?aid=742605928&bvid=BV1Gk4y1u7ni&cid=1170820209&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+[![](docs/play.png)](https://player.bilibili.com/player.html?aid=742605928&bvid=BV1Gk4y1u7ni&cid=1170820209&page=1)
 
 # 功能说明
 
