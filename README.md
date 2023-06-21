@@ -10,6 +10,10 @@ S.E.A Demo是一个用于展示由Landau Robotics（朗道）开发的串联弹�
 
  ![ui](docs/ui.png)
 
+# 效果演示
+
+<iframe src="//player.bilibili.com/player.html?aid=742605928&bvid=BV1Gk4y1u7ni&cid=1170820209&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 # 功能说明
 
 本例程使用的是由Landau Robotics（朗道）开发的LRS4型号SEA
