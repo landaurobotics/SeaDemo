@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(SeaDemoApp LANGUAGES CXX)
+project(SeaProjectApp LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -11,17 +11,17 @@ LINK_DIRECTORIES(/opt/etherlab/lib)
 INCLUDE_DIRECTORIES(src)
 
 find_package(Qt6 COMPONENTS Gui Qml Quick)
-qt_add_executable(SeaDemoApp src/main.cpp src/EcatConfig.cpp src/EcatConfig.h src/Backend.cpp src/Backend.h)
-#qt_add_executable(SeaDemoApp src/main.cpp)
+qt_add_executable(SeaProjectApp src/main.cpp src/EcatConfig.cpp src/EcatConfig.h src/Backend.cpp src/Backend.h)
+#qt_add_executable(SeaProjectApp src/main.cpp)
 
 
-qt_add_resources(SeaDemoApp "configuration"
+qt_add_resources(SeaProjectApp "configuration"
     PREFIX "/"
     FILES
         qtquickcontrols2.conf
 )
 
-target_link_libraries(SeaDemoApp PRIVATE
+target_link_libraries(SeaProjectApp PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Gui
     Qt${QT_VERSION_MAJOR}::Quick
