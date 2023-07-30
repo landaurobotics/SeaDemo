@@ -32,7 +32,7 @@ const float sampleRate = 200;
 const float cutoff_freq = 5; // default 5
 
 const int inner_sign = 1;
-const int outer_sign = -1;
+const int outer_sign = 1;//根据内外圈的方向而定，如若外圈和内圈的方向一致，则为1，否则为-1，现默认方向一致调整为1  
 
 double inner_rad = 0.0;
 double outer_rad = 0.0;
