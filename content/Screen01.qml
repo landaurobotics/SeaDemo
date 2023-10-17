@@ -14,6 +14,7 @@ import SeaProject
 import io.qt.Backend
 
 Rectangle {
+    id: rectangle
     width: Constants.width
     height: Constants.height
 
@@ -103,34 +104,34 @@ Rectangle {
 
     Image {
         id: image
-        anchors.right: parent.right
-        anchors.rightMargin: 20
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 20
-        x: 1714
-        y: 876
-        width: 188
-        height: 188
-        source: "qrc:/content/landau-logo.png"
+        width: 479
+        anchors.top: parent.top
+        height: 170
+        anchors.left: parent.left
+        source: "Landau-new-logo.png"
+        anchors.leftMargin: 38
+        anchors.topMargin: 41
         fillMode: Image.PreserveAspectFit
     }
 
     Text {
         id: tiltle
-        width: 1324
+        width: 1088
         height: 112
         text: qsTr("S.E.A Compliant Motion Demo")
+        anchors.right: parent.right
         anchors.top: parent.top
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
+        anchors.rightMargin: 76
         font.capitalization: Font.SmallCaps
         font.italic: false
         font.family: "Verdana"
         font.bold: true
-        anchors.horizontalCenterOffset: 0
+        anchors.horizontalCenterOffset: 340
         font.pointSize: 50
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.topMargin: 20
+        anchors.topMargin: 70
     }
 
     Item {
@@ -257,7 +258,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.5}D{i:4}D{i:5}D{i:6}D{i:3}D{i:13}D{i:14}D{i:20}
+    D{i:0;formeditorZoom:0.5}D{i:10}
 }
 ##^##*/
 
