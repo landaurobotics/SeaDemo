@@ -11,5 +11,7 @@ qt6_add_qml_module(content
     RESOURCES
         fonts/fonts.txt
         landau-logo.png
+        Landau-new-logo.png
+        rocos-logo.png
         sdj_20.mesh
 )
