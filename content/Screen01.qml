@@ -108,7 +108,7 @@ Rectangle {
         anchors.top: parent.top
         height: 170
         anchors.left: parent.left
-        source: "Landau-new-logo.png"
+        source: "qrc:/content/Landau-new-logo.png"
         anchors.leftMargin: 38
         anchors.topMargin: 41
         fillMode: Image.PreserveAspectFit
